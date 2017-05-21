@@ -1,0 +1,51 @@
+1、顺序
+
+	x=[1 2 3];
+	y=[2 3 4];
+	x+y
+
+	
+2、if-else-end结构
+
+	if expression
+		commands
+	end
+
+
+	例子：
+	x=input('enter x:')
+
+	if x>0
+	   y=1
+	end
+
+
+	if expression
+		commands
+	else
+		commands
+	end
+
+
+	if expression
+		commands1
+	elseif expression2
+		commands2
+	else
+		commands3
+	end
+	
+	fprintf('y=%d\n',y)
+
+
+	例子：
+	x=input('enter x:');   %输入一个值x
+
+	if x>0
+    		y=1;
+	elseif x==0
+    		y=0;
+	else
+    		y=-1;
+	end
+	fprintf('y=%d\n',y)  %打印y的值
