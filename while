@@ -1,0 +1,32 @@
+1、while的语法结构
+	while expression
+		commands
+	end
+
+	for循环次数确定，while循环次数不确定
+2、例子
+	fibonacci数列元素满足一下规则：
+	a(k+2)=a(k)+a(k+1),k=(1,2,……);
+	而且a(1)=a(2）=1，(即从第三项开始，每一项都等于前两项的和）
+	求出该数列中第一个大于9999的元素
+
+	a(1)=1;
+	a(2)=1;
+	i=2;
+	while a(i)<10000
+	  a(i+1)=a(i)+a(i-1);
+	  i=i+1;
+	end
+	[i,a(i)]
+
+
+	
+3、while循环求100之内的和
+
+	i=1;
+	sum=0;
+	while i<101
+		sum=sum+i
+		i=i+1
+	end
+	sum
