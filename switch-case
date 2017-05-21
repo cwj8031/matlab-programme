@@ -1,0 +1,70 @@
+1、语法结构
+
+	switch value      %value ：需要进行判决的标量或字符串
+		case test1
+			commands1   %如果value=test1,执行，并结束
+		case test2
+			commands2   %如果value=test2，执行，并结束
+		……
+		case tesk
+			command
+
+		otherwise          %如果value不等于前面的所有值，执行并结束
+			commands
+	end
+
+
+	其中，肯定有一种被执行。value  可以是标量，也可以是字符串
+
+2、例子
+
+	x=input('enter the data:')
+	switch x
+		case 1
+			data='mon'
+		case 2
+			data='tue'
+		case 3
+			data='wed'
+		case 4
+			data='thu'
+		case 5
+			data='fri'
+		case 6
+			data='sat'
+		case 7
+			data='sun'
+		otherwise
+			data='none,you are error'
+	end
+
+3、使用if结构实现同样的功能
+
+	x=input('enter the number data:')
+
+	if(x==1)
+		data='monday'
+	elseif(x==2)
+		data='tuesday'
+	elseif(x==3)
+		data='wednesday'
+	elseif(x==4)
+		data='thursday'
+	elseif(x==5)
+		data='friday'
+	elseif(x==6)
+		data='saturday'
+	elseif(x==7)
+		data='sunday'
+	else
+		data='none,you are error'
+	end
+
+4、比较
+
+	if 复杂                    switch容易理解
+	if可检测相等和不相等       switch仅可检测相等
+
+
+
+
